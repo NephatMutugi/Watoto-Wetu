@@ -1,0 +1,2 @@
+rootProject.name='Watoto Wetu'
+include ':app'
