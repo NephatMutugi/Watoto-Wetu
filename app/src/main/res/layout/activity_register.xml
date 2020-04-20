@@ -6,4 +6,207 @@
     android:layout_height="match_parent"
     tools:context=".authentication.RegisterActivity">
 
+    <TextView
+        android:id="@+id/topAppBar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:text="@string/app_name_txt"
+        android:fontFamily="@font/calligraffitti"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:background="@drawable/rounded_text"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topAppBar"
+        app:srcCompat="@drawable/app_logo" />
+
+    <EditText
+        android:id="@+id/firstName"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/layouts_height"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="@dimen/margin_end"
+        android:background="@drawable/rounded_edit_text"
+        android:gravity="center"
+        android:ems="10"
+        android:hint="@string/f_name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textFName"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/lastName"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/layouts_height"
+        android:layout_marginTop="@dimen/text_fields_margin_top"
+        android:layout_marginEnd="@dimen/margin_end"
+        android:background="@drawable/rounded_edit_text"
+        android:gravity="center"
+        android:ems="10"
+        android:hint="@string/last_name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textLName"
+        app:layout_constraintTop_toBottomOf="@+id/firstName" />
+
+    <EditText
+        android:id="@+id/enterPhone"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/layouts_height"
+        android:layout_marginTop="@dimen/text_fields_margin_top"
+        android:layout_marginEnd="@dimen/margin_end"
+        android:background="@drawable/rounded_edit_text"
+        android:gravity="center"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="@string/phone_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textPhone"
+        app:layout_constraintTop_toBottomOf="@+id/lastName" />
+
+    <EditText
+        android:id="@+id/enterPass"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/layouts_height"
+        android:layout_marginTop="@dimen/text_fields_margin_top"
+        android:layout_marginEnd="@dimen/margin_end"
+        android:gravity="center"
+        android:background="@drawable/rounded_edit_text"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textPass"
+        app:layout_constraintTop_toBottomOf="@+id/enterPhone" />
+
+    <EditText
+        android:id="@+id/confirmPass"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/layouts_height"
+        android:layout_marginTop="@dimen/text_fields_margin_top"
+        android:layout_marginEnd="@dimen/margin_end"
+        android:background="@drawable/rounded_edit_text"
+        android:gravity="center"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textConfirmPass"
+        app:layout_constraintTop_toBottomOf="@+id/enterPass" />
+
+    <Button
+        android:id="@+id/regBtn"
+        android:layout_width="200dp"
+        android:layout_height="@dimen/layouts_height"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/register"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:fontFamily="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmPass" />
+
+    <TextView
+        android:id="@+id/linkLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/link_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regBtn" />
+
+    <TextView
+        android:id="@+id/textFName"
+        android:layout_width="100dp"
+        android:layout_height="@dimen/layouts_height"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:background="@drawable/labels_background"
+        android:text="@string/f_name"
+        app:layout_constraintEnd_toStartOf="@+id/firstName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textLName"
+        android:layout_width="100dp"
+        android:layout_height="@dimen/layouts_height"
+        android:layout_marginTop="@dimen/text_fields_margin_top"
+        android:layout_marginStart="8dp"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:background="@drawable/labels_background"
+        android:text="@string/last_name"
+        app:layout_constraintEnd_toStartOf="@+id/lastName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textFName" />
+
+    <TextView
+        android:id="@+id/textPhone"
+        android:layout_width="100dp"
+        android:layout_height="@dimen/layouts_height"
+        android:layout_marginTop="@dimen/text_fields_margin_top"
+        android:layout_marginStart="8dp"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:background="@drawable/labels_background"
+        android:text="@string/phone"
+        app:layout_constraintEnd_toStartOf="@+id/enterPhone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textLName" />
+
+    <TextView
+        android:id="@+id/textPass"
+        android:layout_width="100dp"
+        android:layout_height="@dimen/layouts_height"
+        android:layout_marginTop="@dimen/text_fields_margin_top"
+        android:layout_marginStart="8dp"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:background="@drawable/labels_background"
+        android:text="@string/password"
+        app:layout_constraintEnd_toStartOf="@+id/enterPass"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPhone" />
+
+    <TextView
+        android:id="@+id/textConfirmPass"
+        android:layout_width="100dp"
+        android:layout_height="@dimen/layouts_height"
+        android:layout_marginTop="@dimen/text_fields_margin_top"
+        android:layout_marginStart="8dp"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:background="@drawable/labels_background"
+        android:text="@string/confirm_pass"
+        app:layout_constraintEnd_toStartOf="@+id/confirmPass"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPass" />
 </androidx.constraintlayout.widget.ConstraintLayout>

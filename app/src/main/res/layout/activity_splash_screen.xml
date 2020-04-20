@@ -5,14 +5,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashScreenActivity">
+    tools:context=".SplashScreenActivity"
+    android:background="@color/powderBlue">
 
     <ImageView
         android:id="@+id/appLogoImg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginBottom="50dp"
         android:background="@drawable/img_view_boarder"
-        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appNameText"
@@ -24,7 +26,7 @@
         android:layout_height="wrap_content"
         android:text="@string/app_name_txt"
         android:fontFamily="@font/calligraffitti"
-        android:textSize="40sp"
+        android:textSize="25sp"
         android:textStyle="bold"
         android:background="@drawable/rounded_text"
         android:textColor="@color/white"
@@ -33,14 +35,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/slogamTxt"
+        android:id="@+id/sloganTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
         android:fontFamily="@font/calligraffitti"
         android:text="@string/app_slogan"
-        android:textStyle="bold"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appLogoImg" />
