@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".authentication.RegisterActivity">
+    tools:context=".authentication.RegisterActivity"
+    android:background="@color/powderBlue">
 
     <TextView
         android:id="@+id/topAppBar"
@@ -41,6 +42,7 @@
         android:ems="10"
         android:hint="@string/f_name"
         android:inputType="textPersonName"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textFName"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
@@ -56,6 +58,7 @@
         android:ems="10"
         android:hint="@string/last_name"
         android:inputType="textPersonName"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textLName"
         app:layout_constraintTop_toBottomOf="@+id/firstName" />
@@ -71,6 +74,7 @@
         android:ems="10"
         android:inputType="phone"
         android:hint="@string/phone_hint"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textPhone"
         app:layout_constraintTop_toBottomOf="@+id/lastName" />
@@ -85,6 +89,7 @@
         android:background="@drawable/rounded_edit_text"
         android:ems="10"
         android:inputType="textPassword"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textPass"
         app:layout_constraintTop_toBottomOf="@+id/enterPhone" />
@@ -99,6 +104,7 @@
         android:gravity="center"
         android:ems="10"
         android:inputType="textPassword"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textConfirmPass"
         app:layout_constraintTop_toBottomOf="@+id/enterPass" />
@@ -142,6 +148,7 @@
         android:gravity="center"
         android:background="@drawable/labels_background"
         android:text="@string/f_name"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toStartOf="@+id/firstName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
@@ -158,6 +165,7 @@
         android:gravity="center"
         android:background="@drawable/labels_background"
         android:text="@string/last_name"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toStartOf="@+id/lastName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textFName" />
@@ -174,6 +182,7 @@
         android:gravity="center"
         android:background="@drawable/labels_background"
         android:text="@string/phone"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toStartOf="@+id/enterPhone"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textLName" />
@@ -190,6 +199,7 @@
         android:gravity="center"
         android:background="@drawable/labels_background"
         android:text="@string/password"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toStartOf="@+id/enterPass"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textPhone" />
@@ -206,6 +216,7 @@
         android:gravity="center"
         android:background="@drawable/labels_background"
         android:text="@string/confirm_pass"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toStartOf="@+id/confirmPass"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textPass" />

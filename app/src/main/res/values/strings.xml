@@ -14,4 +14,7 @@
     <string name="register">Register</string>
     <string name="confirm_pass">Confirm Pass</string>
     <string name="phone_hint">+254712....</string>
+    <string name="enter_the_phone_number_you_registered_with">Enter the phone number you registered with.</string>
+    <string name="ok">OK</string>
+    <string name="rem_pass">Remembered password? Login</string>
 </resources>
