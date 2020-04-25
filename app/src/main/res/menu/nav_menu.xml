@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/students">
+        <menu>
+            <item android:title="@string/pupils"
+                android:icon="@drawable/pupils_placeholder"
+                android:id="@+id/nav_pupils"
+                />
+            <item android:title="@string/assignments"
+                android:icon="@drawable/homework_placeholder"
+                android:id="@+id/nav_assignments"/>
+            <item android:title="@string/my_profile"
+                android:icon="@drawable/profile_placeholder"
+                android:id="@+id/nav_profile"/>
+
+        </menu>
+    </item>
+
+    <item android:title="@string/app_string">
+        <menu>
+            <item android:title="@string/help"
+                android:icon="@drawable/help_placeholder"
+                android:id="@+id/nav_help"/>
+            <item android:title="@string/logout"
+                android:icon="@drawable/logout_placeholder"
+                android:id="@+id/nav_logout"/>
+        </menu>
+    </item>
+</menu>
