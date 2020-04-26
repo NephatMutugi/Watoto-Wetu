@@ -4,10 +4,8 @@
     android:shape="rectangle">
     <stroke
         android:width="1dp"
-        android:color="@color/tiffanyBlue"/>
-    <corners
-        android:bottomRightRadius="5dp"
-        android:topRightRadius="5dp"/>
+        android:color="@color/gold"/>
 
+    <solid android:color="@color/gold"/>
 
 </shape>

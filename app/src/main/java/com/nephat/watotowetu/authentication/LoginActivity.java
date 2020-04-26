@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.nephat.watotowetu.HomeworkActivity;
 import com.nephat.watotowetu.MainActivity;
 import com.nephat.watotowetu.R;
 
@@ -44,14 +45,13 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                 startActivity(intent);
-                finish();
             }
         });
 
         mLinkForgotPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LoginActivity.this, ForgotPasswordActivity.class);
+                Intent intent = new Intent(LoginActivity.this, HomeworkActivity.class);
                 startActivity(intent);
             }
         });

@@ -21,7 +21,7 @@ tools:context=".fragments.HomeworksFragment">
             android:gravity="center_vertical"
             android:padding="10dp"
             android:text="@string/assignments"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
@@ -37,7 +37,7 @@ tools:context=".fragments.HomeworksFragment">
             android:gravity="end|bottom"
             android:padding="10dp"
             android:text="@string/sheila_atieno"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/black"
             android:textSize="15sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -66,9 +66,8 @@ tools:context=".fragments.HomeworksFragment">
                 android:fontFamily="serif"
                 android:gravity="start|center_vertical"
                 android:text="@string/maths"
-                android:textColor="@color/yellow"
-                android:textSize="40sp"
-                android:textStyle="bold" />
+                android:textColor="@color/white"
+                android:textSize="40sp" />
 
             <ImageView
                 android:id="@+id/imageView4"
@@ -102,9 +101,8 @@ tools:context=".fragments.HomeworksFragment">
                 android:fontFamily="serif"
                 android:gravity="start|center_vertical"
                 android:text="@string/science"
-                android:textColor="@color/yellow"
-                android:textSize="40sp"
-                android:textStyle="bold" />
+                android:textColor="@color/white"
+                android:textSize="40sp"/>
 
             <ImageView
                 android:id="@+id/imageView5"
@@ -138,9 +136,8 @@ tools:context=".fragments.HomeworksFragment">
                 android:fontFamily="serif"
                 android:gravity="start|center_vertical"
                 android:text="@string/cre"
-                android:textColor="@color/yellow"
-                android:textSize="40sp"
-                android:textStyle="bold" />
+                android:textColor="@color/white"
+                android:textSize="40sp"/>
 
             <ImageView
                 android:id="@+id/imageView6"
@@ -173,9 +170,8 @@ tools:context=".fragments.HomeworksFragment">
                 android:fontFamily="serif"
                 android:gravity="start|center_vertical"
                 android:text="@string/kiswahili"
-                android:textColor="@color/yellow"
-                android:textSize="40sp"
-                android:textStyle="bold" />
+                android:textColor="@color/white"
+                android:textSize="40sp"/>
 
             <ImageView
                 android:id="@+id/imageView7"

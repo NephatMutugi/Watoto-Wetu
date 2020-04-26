@@ -42,4 +42,15 @@
     <string name="liam_johnson">Liam Johnson</string>
     <string name="pp2">PP2</string>
     <string name="kiswahili">Kiswahili</string>
+    <string name="description">Description</string>
+    <string name="question">    1. Write the ten commandments\n    2. In the Bible, who is regarded to as the father of faith? \n    3. Who was the mother of Jesus</string>
+    <string name="download_attachment">DOWNLOAD ATTACHMENT</string>
+    <string name="instructions">INSTRUCTIONS</string>
+    <string name="instructions_text">    Refer to the Bible for correct answers.\n    Deadline - Tuesday 17th April\n    Late submissions will result to punishment.\n    Thank you.</string>
+    <string name="complete">COMPLETE</string>
+    <string name="wamaitha">Wamaitha</string>
+    <string name="phone_prof">060-756284</string>
+    <string name="email_edit_text">You can edit your phone number from our website using a desktop, laptop or a computer</string>
+    <string name="first_name">First Name</string>
+    <string name="change_password">Change Password</string>
 </resources>
