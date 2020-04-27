@@ -14,11 +14,10 @@
         android:layout_height="50dp"
         android:layout_marginTop="50dp"
         android:padding="10dp"
-        android:background="@color/white"
+        android:background="@color/powderBlue"
         android:text="@string/pupils_list"
         android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/black"
         android:fontFamily="serif"
         android:gravity="center_vertical"
         app:layout_constraintEnd_toEndOf="parent"
@@ -78,7 +77,6 @@
             android:layout_marginStart="@dimen/text_margin"
             android:textSize="20sp"
             android:fontFamily="serif"
-            android:textStyle="bold"
             android:textColor="@color/white" />
 
         <TextView
@@ -111,7 +109,6 @@
             android:text="@string/sheila_atieno"
             android:textSize="20sp"
             android:fontFamily="serif"
-            android:textStyle="bold"
             android:textColor="@color/white"/>
 
         <TextView
@@ -126,12 +123,13 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout9"
         android:layout_width="200dp"
         android:layout_height="80dp"
         android:layout_marginTop="16dp"
-        android:padding="10dp"
         android:background="@drawable/pupils_layout_background"
         android:orientation="vertical"
+        android:padding="10dp"
         app:layout_constraintStart_toEndOf="@+id/imagePupil3"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
 
@@ -140,25 +138,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/text_margin"
-            android:text="@string/liam_johnson"
-            android:textSize="20sp"
             android:fontFamily="serif"
-            android:textStyle="bold"
-            android:textColor="@color/white"/>
+            android:text="@string/liam_johnson"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/pupilGrade3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/text_margin"
-            android:text="@string/pp2"
-            android:textSize="20sp"
             android:fontFamily="serif"
-            android:textColor="@color/white"/>
+            android:text="@string/pp2"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/swahiliText"
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:layout_marginTop="24dp"
@@ -168,11 +165,9 @@
         android:text="3"
         android:textColor="@color/white"
         android:textSize="50sp"
-        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/linearLayout3"
         app:layout_constraintTop_toBottomOf="@+id/fragmentName" />
-
 
 
     <TextView
@@ -186,9 +181,8 @@
         android:text="1"
         android:textColor="@color/white"
         android:textSize="50sp"
-        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/linearLayout3"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout9"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
@@ -202,10 +196,9 @@
         android:text="4"
         android:textColor="@color/white"
         android:textSize="50sp"
-        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/linearLayout3"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintStart_toEndOf="@+id/linearLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

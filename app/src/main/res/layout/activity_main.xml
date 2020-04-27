@@ -21,9 +21,9 @@
             <androidx.appcompat.widget.Toolbar
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:background="@color/white"
+                android:background="@color/tiffanyBlue"
                 android:id="@+id/main_toolbar"
-                app:titleTextColor="@color/colorPrimary"
+                app:titleTextColor="@color/white"
                 />
 
         </com.google.android.material.appbar.AppBarLayout>

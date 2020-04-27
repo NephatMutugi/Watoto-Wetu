@@ -16,14 +16,13 @@ tools:context=".fragments.HomeworksFragment">
             android:layout_width="170dp"
             android:layout_height="50dp"
             android:layout_marginTop="52dp"
-            android:background="@color/white"
+            android:background="@color/powderBlue"
             android:fontFamily="serif"
             android:gravity="center_vertical"
             android:padding="10dp"
             android:text="@string/assignments"
             android:textColor="@color/black"
             android:textSize="20sp"
-            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -32,14 +31,13 @@ tools:context=".fragments.HomeworksFragment">
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_marginTop="52dp"
-            android:background="@color/white"
+            android:background="@color/powderBlue"
             android:fontFamily="serif"
             android:gravity="end|bottom"
             android:padding="10dp"
             android:text="@string/sheila_atieno"
             android:textColor="@color/black"
             android:textSize="15sp"
-            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/fragmentName"
             app:layout_constraintTop_toTopOf="parent" />
@@ -59,7 +57,7 @@ tools:context=".fragments.HomeworksFragment">
 
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/mathText"
                 android:layout_width="256dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/homework_layout_background"
@@ -70,7 +68,7 @@ tools:context=".fragments.HomeworksFragment">
                 android:textSize="40sp" />
 
             <ImageView
-                android:id="@+id/imageView4"
+                android:id="@+id/imageHWork1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="16dp"
@@ -94,7 +92,7 @@ tools:context=".fragments.HomeworksFragment">
             app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
             <TextView
-                android:id="@+id/textView7"
+                android:id="@+id/scienceText"
                 android:layout_width="256dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/homework_layout_background"
@@ -105,7 +103,7 @@ tools:context=".fragments.HomeworksFragment">
                 android:textSize="40sp"/>
 
             <ImageView
-                android:id="@+id/imageView5"
+                android:id="@+id/imageHWork2"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="16dp"
@@ -129,7 +127,7 @@ tools:context=".fragments.HomeworksFragment">
             app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/creText"
                 android:layout_width="256dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/homework_layout_background"
@@ -140,14 +138,15 @@ tools:context=".fragments.HomeworksFragment">
                 android:textSize="40sp"/>
 
             <ImageView
-                android:id="@+id/imageView6"
+                android:id="@+id/imageHWork3"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="8dp"
                 android:background="@drawable/homework_image_background"
                 android:layout_weight="1"
-                android:src="@drawable/do_assignment" />
+                android:src="@drawable/do_assignment"
+                android:contentDescription="CRE Assignment" />
         </LinearLayout>
 
         <LinearLayout
@@ -163,7 +162,7 @@ tools:context=".fragments.HomeworksFragment">
             app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
 
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/swahiliText"
                 android:layout_width="256dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/homework_layout_background"
@@ -174,7 +173,7 @@ tools:context=".fragments.HomeworksFragment">
                 android:textSize="40sp"/>
 
             <ImageView
-                android:id="@+id/imageView7"
+                android:id="@+id/imageHWork4"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="16dp"
