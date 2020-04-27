@@ -6,14 +6,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SplashScreenActivity"
-    android:background="@color/powderBlue">
+    android:background="@color/tiffanyBlue">
 
     <ImageView
         android:id="@+id/appLogoImg"
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:layout_marginBottom="50dp"
-        android:background="@drawable/img_view_boarder"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,7 +24,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/app_name_txt"
-        android:fontFamily="@font/calligraffitti"
+        android:gravity="center"
+        android:fontFamily="serif"
         android:textSize="25sp"
         android:textStyle="bold"
         android:background="@drawable/rounded_text"
@@ -39,10 +39,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-        android:fontFamily="@font/calligraffitti"
+        android:fontFamily="serif"
         android:text="@string/app_slogan"
         android:textSize="30sp"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appLogoImg" />

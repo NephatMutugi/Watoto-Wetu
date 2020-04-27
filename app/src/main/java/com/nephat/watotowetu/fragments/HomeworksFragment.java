@@ -4,7 +4,9 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,6 +18,8 @@ import com.nephat.watotowetu.R;
 
 public class HomeworksFragment extends Fragment {
 
+    private static final String TAG = "HomeworksFragment";
+    private DescriptionFragment descriptionFragment = new DescriptionFragment();
     //Widgets
     private ImageView imageView1;
     private ImageView imageView2;
@@ -51,65 +55,76 @@ public class HomeworksFragment extends Fragment {
         textCRE = mView.findViewById(R.id.creText);
         textSwahili = mView.findViewById(R.id.swahiliText);
 
-        final Intent intent = new Intent(getActivity(), HomeworkActivity.class);
+        //final Intent intent = new Intent(getActivity(), HomeworkActivity.class);
 
 
         imageView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(intent);
+                toDescription();
             }
         });
 
         imageView2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(intent);
+                toDescription();
             }
         });
 
         imageView3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(intent);
+                toDescription();
             }
         });
 
         imageView4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(intent);
+                toDescription();
             }
         });
 
         textMath.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(intent);
+                toDescription();
             }
         });
 
         textScience.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(intent);
+                toDescription();
             }
         });
 
         textCRE.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(intent);
+                toDescription();
             }
         });
 
         textSwahili.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(intent);
+                toDescription();
             }
         });
 
         return mView;
+    }
+
+    private void toDescription(){
+        if (getFragmentManager() != null) {
+            FragmentTransaction fragmentTransaction= getFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.fragment_container, descriptionFragment);
+            fragmentTransaction.addToBackStack(null);
+            fragmentTransaction.commit();
+        }  else {
+            Log.d(TAG, "onClick: You clicked Sheila");
+        }
     }
 }

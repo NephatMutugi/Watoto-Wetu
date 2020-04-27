@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".fragments.DescriptionFragment"
+android:background="@color/powderBlue">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/homeworkName"
+        android:layout_width="332dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/homework_name_background"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="@string/cre"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appName" />
+
+    <TextView
+        android:id="@+id/descriptionText"
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/homework_description_name_background"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="@string/description"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeworkName" />
+
+    <TextView
+        android:id="@+id/homeworkQuestions"
+        android:layout_width="332dp"
+        android:layout_height="150dp"
+        android:background="@drawable/homework_description"
+        android:text="@string/question"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:fontFamily="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionText" />
+
+    <TextView
+        android:id="@+id/textDownload"
+        android:layout_width="332dp"
+        android:layout_height="40dp"
+        android:background="@drawable/homework_attachment"
+        android:drawableEnd="@drawable/attachment_ic"
+        android:fontFamily="serif"
+        android:text="@string/download_attachment"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeworkQuestions" />
+
+    <TextView
+        android:id="@+id/textInstructions"
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/homework_instructions"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="@string/instructions"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDownload" />
+
+    <TextView
+        android:id="@+id/instructions"
+        android:layout_width="332dp"
+        android:layout_height="150dp"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:fontFamily="serif"
+        android:background="@drawable/homework_instructions_boarder"
+        android:text="@string/instructions_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInstructions" />
+
+    <Button
+        android:id="@+id/btnComplete"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/complete"
+        android:textSize="30sp"
+        android:fontFamily="serif"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instructions" />
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="320dp"
+        android:layout_height="56dp"
+        android:background="@color/tiffanyBlue"
+        android:gravity="end|center_vertical"
+        android:paddingEnd="20dp"
+        android:text="@string/app_name"
+        android:fontFamily="serif"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlSymmetry" />
+
+    <ImageView
+        android:id="@+id/imgBack"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:background="@color/tiffanyBlue"
+        app:layout_constraintEnd_toStartOf="@+id/appName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_back_white_24" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
