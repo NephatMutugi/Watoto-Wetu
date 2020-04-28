@@ -13,7 +13,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.nephat.watotowetu.HomeworkActivity;
 import com.nephat.watotowetu.R;
 
 public class HomeworksFragment extends Fragment {

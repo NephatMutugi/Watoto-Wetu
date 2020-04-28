@@ -12,7 +12,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
-import com.nephat.watotowetu.HomeworkActivity;
 import com.nephat.watotowetu.R;
 
 /**

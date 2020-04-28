@@ -12,7 +12,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.nephat.watotowetu.HomeworkActivity;
 import com.nephat.watotowetu.MainActivity;
 import com.nephat.watotowetu.R;
 
